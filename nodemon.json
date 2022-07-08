@@ -1,0 +1,8 @@
+{
+    "env" : {
+        "DB_USER" : "shekhar",
+        "DB_PASSWORD" : "12345654321",
+        "DB_NAME" : "share-place",
+        "JWT_KEY" : "super_secret_key"
+    }
+}
