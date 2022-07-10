@@ -49,6 +49,7 @@ app.use((error, req, res, next) => { //middleware
 });
 
 mongoose
+// `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.66zy2.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 .connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.66zy2.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`, // places : Database name
     { 
@@ -58,7 +59,7 @@ mongoose
 )   
 .then(() => {
         console.log("Connected to database");
-        app.listen(process.env.PORT || 5000);
+        app.listen(5000);
     })
     .catch((err) => {
         console.log(err);
